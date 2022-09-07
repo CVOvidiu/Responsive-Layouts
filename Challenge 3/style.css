@@ -1,0 +1,51 @@
+/* Learned:
+- Don't use padding left and right, set the background color of the parent and the child should be centered (margin: 0 auto;) for nice effect.
+- When you set something centered, set max-width so the text doesn't spread all the way.
+*/
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto;
+}
+
+main {
+    background-color: #23424A;
+}
+
+section {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 100px 0;
+}
+
+.wrapper {
+    width: 50%;
+    color: #FFF;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.desc {
+    font-weight: 300;
+    font-size: 1rem;
+    margin-bottom: 3em;
+}
+
+a {
+    display: inline-block;
+    background-color: #38CFD9;
+    padding: .75em 2em;
+    border-radius: 200px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #23424A;
+    font-weight: 900;
+    white-space: nowrap;
+}
