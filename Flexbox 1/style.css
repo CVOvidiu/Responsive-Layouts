@@ -1,0 +1,81 @@
+html {
+    font-size: 25px;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto;
+}
+
+.sec-header {
+    background-color: #23424A;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.content--wrapper {
+    width: 50%;
+    padding: 100px 0;
+    color: #FFF;
+}
+
+.sec-header--title {
+    font-size: 2rem;
+}
+
+.sec-header--desc {
+    margin-bottom: 3em;
+}
+
+.sec-header a {
+    display: inline-block;
+    background-color: #38CFD9;
+    padding: .75em 2em;
+    border-radius: 200px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #23424A;
+    font-weight: 900;
+    white-space: nowrap;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.spacing {
+    gap: 3em;
+    padding: 3em 0;
+}
+
+/* if gap is not supported
+.item + .item {
+    margin-left: 50px;
+}
+*/
+
+.flex-container .item {
+    text-align: center;
+}
+
+.flex-container .item--title {
+    font-size: 1.5rem;
+    margin-bottom: .5em;
+    font-weight: 600;
+}
+
+.sec-one .item--title {
+    color: #87629A;
+}
+
+.sec-two {
+    background-color: #136C72;
+}
+
+.sec-two {
+    color: #FFF;
+}
