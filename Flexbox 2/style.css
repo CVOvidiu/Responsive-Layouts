@@ -1,0 +1,103 @@
+html {
+    font-size: 23px;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto;
+}
+
+.content + .content { /* if it has a sibling with same class before it */
+    padding: 3em 0;
+}
+
+.sec-header {
+    background-color: #23424A;
+    padding: 5em 0;
+}
+
+.container {
+    width: 80%; /* of parent (sec-header->content->body) */
+    margin: 0 auto; /* center elements */
+    max-width: 1400px; /* so elements do not get all the way over to the borders and we get a smooth border when resizing */
+}
+
+.flex-container {
+    display: flex; /* good practice */
+}
+
+.flex-spacing {
+    justify-content: space-between; /* good practice */
+}
+
+.flex-direction-column {
+    flex-direction: column; /* good practice */
+}
+
+.sec-header--content { /* header text content */
+    width: 45%; /* of container parent, to make the text content container responsive */
+    color: #FFF;
+}
+
+.sec-header--title {
+    font-size: 2rem;
+}
+
+.sec-header a {
+    /* font-size is 1rem by default */
+    margin-top: 1em;
+    text-align: center; /* so it's centered when width changes when resizing */
+    background-color: #38CFD9;
+    padding: .75em 2em;
+    border-radius: 2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #23424A;
+    font-weight: 900;
+    white-space: nowrap; /* so the text doesn't break on multiple lines */
+    width: 8em;
+}
+
+.sec-header--img {
+    width: 45%; /* of container parent, to make the container of image responsive; we set the sum of percentages between size the elements (img container and header text content) to be < 100 so we have a space between that we can manipulate with justify-content: space-between; */
+    align-items: center; /* so the image is always centered in the container */
+}
+
+img {
+    width: 100%; /* good practice to make every image element responsive */
+}
+
+.sec-one {
+    width: 55%; /* @: we use the same strategy, so the containers are responsive and the space between them is responsive as well */
+}
+
+.sec-one h2 {
+    color: #136C72;
+}
+
+.sec-two {
+    padding: 2em;
+    background-color: #136C72;
+    color: #FFF;
+    width: 25%; /* @ */
+}
+
+.spacing {
+    gap: 3em;
+}
+
+/* if gap is not supported
+.item + .item {
+    margin-left: 50px;
+}
+*/
+
+.sec-two--item {
+    text-align: center;
+}
+
+.sec-two--item .item--title {
+    font-size: 1.5rem;
+    margin-bottom: .5em;
+    font-weight: 600;
+}
