@@ -12,15 +12,32 @@ header {
     background-color: #136C72;
 }
 
-.nav__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.header__container { /* so it's spaced between logo and buttons */
+    justify-content: space-between;
+}
+
+.header__container a { /* so the logo is centered */
     display: flex;
 }
 
-.nav__item {
-    margin-right: 1em;
+.main-nav { /* the big section that holds the buttons */
+    justify-content: space-between;
+    flex-grow: 1; /* it's allowed to shrink and to grow */
+}
+
+.nav__list { /* the buttons of the nav without logo */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.nav__list--primary { /* set the middle section of the nav in the center */
+    margin: 0 auto;
+}
+
+.nav__item + .nav__item {
+    margin-left: 1em;
 }
 
 .nav__link {
