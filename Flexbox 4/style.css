@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 18px;
+    
+    --primary: #824936;
+    --secondary: #F3EED9;
+    --third: #222C2A;
+}
+
+img {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1128px;
+    width: 80%;
+}
+
+/* ----- Hero section ----- */
+
+.hero {
+    background-color: var(--secondary);
+    height: 100vh;
+    align-items: center;
+}
+
+.hero__container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero__subtitle {
+    font-family: Roboto;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+    margin-bottom: .5em;
+}
+
+.hero__title {
+    font-family: Playfair Display;
+    font-weight: 900;
+    font-size: 3.33rem;
+    color: var(--primary);
+    text-align: center;
+    max-width: 45rem;
+}
+
+/* ----- Section ------ */
+
+.sec__header {
+    font-family: Playfair Display;
+    font-size: 2rem;
+    margin-bottom: .5em;
+}
+
+.space {
+    justify-content: space-between;
+}
+
+.sec__side {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25rem;
+    font-family: Roboto;
+    font-weight: 400;
+}
+
+/* ----- Section 1 -----*/
+
+.sec1 {
+    padding: 5em 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec1 .sec__header {
+    color: var(--primary);
+}
+
+.sec1 .space {
+    margin: 2em 0;
+}
+
+/* ----- Section 2 ----- */
+
+.sec2 {
+    padding: 5em 0;
+    background-color: var(--third);
+    color: var(--secondary);
+}
+
+/* ----- Section 3 -----*/
+
+.sec3 {
+    padding: 5em 0;
+    background-color: var(--primary);
+    color: var(--secondary);
+}
