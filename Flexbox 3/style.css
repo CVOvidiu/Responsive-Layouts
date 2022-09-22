@@ -1,5 +1,6 @@
 html {
     font-size: 23px;
+    box-sizing: border-box;
 }
 
 body {
@@ -18,6 +19,16 @@ header {
 
 .header__container a { /* so the logo is centered */
     display: flex;
+}
+
+.hamburger-menu {
+    display: none;
+    background-color: #062224;
+    border: none;
+    width: 4em;
+    height: 4em;
+    border-radius: 5em;
+    padding: 1em;
 }
 
 .main-nav { /* the big section that holds the buttons */
@@ -126,6 +137,7 @@ img {
 }
 
 .sec-two {
+    box-sizing: border-box; /* Because padding creates issues */
     padding: 2em;
     background-color: #136C72;
     color: #FFF;
@@ -150,4 +162,36 @@ img {
     font-size: 1.5rem;
     margin-bottom: .5em;
     font-weight: 600;
+}
+
+@media (max-width: 601px) {
+    .sec-header .flex-container,
+    .text-content {
+        flex-direction: column;
+    }
+
+    .sec-header--content,
+    .sec-header--img,
+    .sec-one,
+    .sec-two {
+        width: 100%;
+    }
+
+    .sec-header--img {
+        margin-top: 2em;
+    }
+}
+
+@media (max-width: 901px) {
+    header .main-nav {
+        display: none;
+    }
+
+    header .hamburger-menu {
+        display: block;
+    }
+    
+    header .logo {
+        margin: 0 auto;
+    }
 }
